@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border: 1px solid black;
+            justify-content: space-between; 
+            align-content: center;   
+            flex-wrap: wrap;  
+            padding-left: 20px;  
+            
+        }
+        
+        .flex-item{
+            height: 50vh;
+            width: 25vw;
+            
+        }
+ /*       #selector1{
+background-color:lightcyan;
+        }
+        #selector2{
+background-color: lightgreen;
+        }
+        #selector3{
+background-color: lightskyblue;
+        }
+        #selector4{
+background-color: lightskyblue;
+        }*/
+
+        @media screen and (max-width: 700px) {
+            .flex-item {
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .flex-item {
+                flex: 0 0 100%;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="flex-container">
+
+    <div class="flex-item" id="selector1"><b>Get in Touch</b>
+    <p style="color: grey;">Don't miss any updatesof our new templates and extensions!</p>
+    <input type="email" placeholder="Email"><br><br>
+    <button style="color: white; background-color: blue;">Subscribe</button>
+    </div>
+
+    <div class="flex-item" id="selector2"><b>Download</b>
+    <pre style="color: grey;">
+company
+
+AndriodApp
+
+iosApp
+
+Desktop
+
+Projects
+
+My tasks
+    </pre>
+    </div>
+
+    <div class="flex-item" id="selector3">
+        <b>Help</b> 
+    <pre style="color: grey;">
+FAQ
+        
+Terms&Conditions
+        
+Reporting
+        
+Documentation
+        
+SupportPolicy
+        
+Privacy
+    </pre>
+</div>
+
+    <div class="flex-item" id="selector4"><b>Team Solutions</b> <br><br>
+        <i class="fa-brands fa-facebook"></i>&nbsp;
+        <i class="fa-brands fa-twitter"></i>&nbsp;
+        <i class="fa-brands fa-linkedin"></i>&nbsp;
+        <i class="fa-brands fa-pinterest"></i>&nbsp; 
+    </div>    
+</div>
+    
+</body>
+</html>
