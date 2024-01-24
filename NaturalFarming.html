@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Forming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        .navbar h1{
+            font-family: 'Lobster', sans-serif;
+            padding-left: 50px;
+            /* border: 1px solid red; */
+            position: sticky;
+            
+        }
+        .navbar ul{
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            /* background-color: whitesmoke; */
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar{
+            display: flex;
+            /* flex-wrap: nowrap; */
+            gap: 70%;
+            height: 15vh;
+            width: 100vw;
+            background-color: whitesmoke;
+            padding-left: 10px;
+        }
+        .navbar pre{
+            position: absolute;
+            right: 5px;
+            top: 20px;
+        }
+        main{
+            height: 100vh;
+            background-image:url('nature.avif');
+            background-size: cover;
+            width: 100vw; 
+            /* background-size: cover;
+            background-position: center;  */
+        }
+        /* main >img{
+            width: 100vw;
+            height: 90%;
+        } */
+        .container{
+            height: 50%;
+            width: 70%;
+            /* background-color: white;  */
+            display: flex;
+            /* border: 1px solid black; */
+            direction: center;
+            gap: 10px;
+            position: absolute;
+            left: 20%;
+            top: 30%;    
+
+           
+        }
+        .box{
+            height: 100%;
+            width: 100%;
+            background-color: white; 
+            /* display: flex; */
+            border: 1px solid black;
+            display: flex;
+            /* text-align: center; */   
+            background-color: whitesmoke;  
+        }
+        .text{
+            text-align: center;
+            padding: 50px;
+        }
+        button{
+            background-color: rgb(214, 212, 212);
+            color: black;
+            height: 40px;
+            width: 120px;
+            border: none;
+        }
+        h4{
+            font-family: 'Open Sans', sans-serif; 
+            color: rgb(141, 136, 136);
+        }
+        a{
+            text-decoration: none;
+        }        
+
+        @media screen  and (max-width:576px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr ;
+            
+            } }
+        
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Natural Farming</h1>
+        <pre style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: gray;"><a href="" style="color: rgb(84, 84, 184);">Home</a>     About    Contact </pre>
+    </nav>
+    <main>
+        <div class="container">
+            
+            <div class="box" id="farm">
+            <div class="text">
+            <h4 class="h">Family Farms</h4> <br>
+            Sample Text .click to Select the text box.click again or Doubleclick to start editing the text. <br><br>
+            <button>Learn more</button>
+            </div>
+            </div>
+
+
+            <div class="box" id="trends">
+                <div class="text">
+                   <h4 class="h"> View Trends </h4> <br>
+                    Sample Text.Click to Select the Text box.Click again or double click to start editing the text. <br><br>
+                    <button>Learn more</button>
+                </div>
+            </div>
+
+
+            <div class="box" id="soil">
+                <div class="text">
+                <h4 class="h">Healthy Soil </h4><br>
+                Sample Text.click to select the text box.click again or double click to start editing the text.  <br><br>
+                <button>Learn more</button>
+                </div>
+            </div>
+            
+        </div>
+    <!-- <img src="nature.avif" alt=""> -->
+    </main>
+</body>
+</html>
